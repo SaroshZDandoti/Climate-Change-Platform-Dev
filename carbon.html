@@ -3,10 +3,178 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Carbon Footprint</title>
+
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+    <!-- Including the bootstrap CDN -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+
+
+  <link rel="stylesheet" href="styles/styles_carbon.css">
+
+  <script src="utilities/carbon.js"></script>
+  
+
 </head>
-<body>
+<body style="background-color:azure;">
     
-</body>
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+        <ul class="navbar-nav ml-auto">
+        <div class="container-fluid" >
+          <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav" >
+              <a class="nav-link " aria-current="page" href="index.html">Home</a>
+              <a class="nav-link " href="analysis.html">Analysis</a>
+              <a class="nav-link active" href="carbon.html">Carbon Footprint</a>
+              <a class="nav-link" href="events.html">Events</a>
+              <a class="nav-link" href="about.html">About</a>
+            </div>
+          </div>
+        </div>
+    </ul>
+      </nav>
+  
+      <br><br>
+      <br>
+       <div class="center">
+     <p style="font-size: 80px;" >Carbon Footprint  Calculator  </p> 
+     <h4 >Simple Calculator to find your carbon Footprint</h4>
+      </div>
+
+
+    <!-- Old Calculator -->
+      <!--  <form action="" class="center" >
+          Enter your Electricity Usage in (KWh/Yr)<input type="number" id="Electricity"  > <br> <br>
+          Enter your Petrol Usage in (In Litres/Yr)<input type="number" id="Petrol"  > <br> <br>
+          Enter your Diesel Usage in (In Litres/Yr) <input type="number" id="Diesel"  > <br> <br>
+          Enter your LPG Usage in (In Kg/Yr) <input type="number" id="LPG"  > <br> <br>
+
+      </form>
+  <div class="center">
+      <button onclick="calc()" type="button" > Calculate </button> <br> <br>
+    </div>
+        <p class="center" >Your Carbon Footprint (Kg of CO2) = <input id="answer"></p> -->
+
+<div  class="formbox" >
+
+        <form action="" class="center" >
+          <br><br>
+
+          <p style="font-weight: bold;">1. How much electricity is used in your household? </p>
+         
+          <table class="center">
+            <tr>
+              <td>   <input class="form-check-input" type="radio" id="smallhouse" name="houseelec" value="SMALLHOUSE">  </td>
+              <td>   <label class="form-check-label"  >Small house / flat (3,000 kWh)</label> </td>
+            </tr>
+            <tr>
+              <td>    <input class="form-check-input"  type="radio" id="mediumhouse" name="houseelec" value="MEDIUMHOUSE"> </td>
+              <td>    <label for="mediumhouse">Medium (4,800 kWh) </label> </td>
+           </tr>
+           <tr>
+             <td>   <input class="form-check-input"  type="radio" id="largehouse" name="houseelec" value="LARGEHOUSE"></td>
+             <td>    <label for="largehouse">Large house (7,000 kWh) </label> </td>
+           </tr>
+        
+        </table>
+ 
+          
+        <p style="font-weight: bold;">2. How much gas is used in your household? </p>
+          
+        
+        <table class="center">
+          <tr>
+            <td>    <input class="form-check-input"  type="radio" id="smallhouse" name="housegas" value="smallgas"> </td>
+            <td>  <label for="smallhouse">Small house / flat (12,000 kWh)</label> </td>
+          </tr>
+          <tr>
+            <td>   <input class="form-check-input"   type="radio" id="mediumhouse" name="housegas" value="medgas"> </td>
+            <td>    <label for="mediumhouse">Medium (18,000 kWh) </label> </td>
+         </tr>
+         <tr>
+            <td> <input class="form-check-input"  type="radio" id="housegas" name="housegas" value="largegas"> </td> 
+            <td>   <label for="largehouse">Large house (27,000 kWh) </label> </td>
+         </tr>
+        </table>
+          
+
+       
+          <p style="font-weight: bold;">3. How many cars are used by your household? </p>
+         
+    
+         <input class="form-check-input" type="radio" id="smallhouse" name="ncars" value="0car">    
+          <label class="form-check-label" for="smallhouse"> 0 </label>
+       <br>
+         <input class="form-check-input"  type="radio" id="mediumhouse" name="ncars" value="1car">
+          <label class="form-check-label" for="mediumhouse"> 1 </label> 
+       <br>
+        <input class="form-check-input" type="radio" id="housegas" name="ncars" value="2car"> 
+         <label for="largehouse"> 2 </label> 
+        <br>
+          <input class="form-check-input" type="radio" id="housegas" name="ncars" value="3car"> 
+          <label for="largehouse">  3 </label>
+        <br>
+        
+         <input class="form-check-input" type="radio" id="housegas" name="ncars" value="4car"> 
+         <label for="largehouse">  4 </label>
+       <br>
+          
+
+
+          <p style="font-weight: bold;">3 a. Select 12-month car mileage: </p>
+
+          <table class="center">
+
+        <tr>
+         <td> <input class="form-check-input" type="radio" id="smallhouse" name="mileage" value="0miles"></td>
+         <td> <label for="smallhouse">000 miles</label></td>
+        </tr>  
+
+        <tr>  
+          <td>   <input class="form-check-input" type="radio" id="smallhouse" name="mileage" value="lowmiles"></td>
+          <td>   <label for="smallhouse">Low (6,000 miles)</label></td>
+        </tr>  
+
+        <tr>   
+          <td>    <input class="form-check-input"  type="radio" id="mediumhouse" name="mileage" value="avgmiles"></td>
+          <td>     <label for="mediumhouse">Average (9,000 miles) </label></td>
+      </tr>  
+
+      <tr> 
+        <td>    <input class="form-check-input"  type="radio" id="housegas" name="mileage" value="highmiles"></td>
+        <td>     <label for="largehouse">High (12,000 miles) </label></td>
+      </tr>  
+       
+        </table>
+          <br> <br>
+
+        
+        </form>
+
+        <div class="center">
+        <button class="btn btn-success" onclick=" checkButton()" type="button">Calculate </button>
+      </div>
+      <br><br>
+
+      <div class="input-group mb-3;center" style="padding-left: 200px; padding-right: 200px;" >
+        <span class="input-group-text" id="inputGroup-default">Your Carbon Footprint (Kg of CO2) </span>
+      
+        <input type="text" class="form-control" aria-label="Sizing example input"  id="co2"
+               aria-describedby="inputGroup-sizing-default">
+      </div>
+
+        <br><br> 
+      </div>
+      </body>
 </html>

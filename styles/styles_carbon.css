@@ -1,0 +1,29 @@
+.center {
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.formbox {
+  font-size: larger;
+  background-color: aliceblue;
+  margin: 100px;
+  border-color: yellowgreen;
+  border-width: 20px;
+  border-style: solid;
+}
+
+td,
+th {
+  text-align: left;
+  padding: 8px;
+  vertical-align: top;
+}
+
+table.center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.numbers {
+  padding: 20px;
+}
