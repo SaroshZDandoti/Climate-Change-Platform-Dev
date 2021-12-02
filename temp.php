@@ -8,7 +8,6 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <link href="https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./styles/styles_analysis.css" type="text/css">
 
     <title>Climate Change Platform</title>
 
@@ -24,9 +23,9 @@
 
     <link rel="stylesheet" href="assets/css/lightbox.css">
 
-    </head>
+</head>
     
-    <body  style="background-color:black;">
+    <body>
     
     <!-- ***** Preloader Start ***** -->
     <div id="preloader">
@@ -54,14 +53,14 @@
                         <ul class="nav">
                             <li class="scroll-to-section"><a href="index.html" class="active">Home</a></li>
                             <li class="scroll-to-section"><a href="analysis.html">Analysis</a></li>
-                            <li class="scroll-to-section"><a href="register.php">Events</a></li>
+                            <li class="scroll-to-section"><a href="events.html">Events</a></li>
                             <li class="scroll-to-section"><a href="carbon.html">Carbon Calculator</a></li>
                             <li class="scroll-to-section"><a href="about.html">About</a></li>
                             <li class="submenu">
                                 <a href="javascript:;">More</a>
                                 <ul>
-                                    <li><a href="about.html">About Us</a></li>
-                                    <li><a href="feedback.html">Feedback</a></li>
+                                    <li><a href="">About Us</a></li>
+                                    <li><a href="">Feedback</a></li>
                         
                                 </ul>
                             </li>
@@ -94,18 +93,102 @@
         </form>
     </div>
 
-    <br><br><br>
-    <div class='tableauPlaceholder' id='viz1638446491779' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;RI&#47;RISING&#47;RISING&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='RISING&#47;RISING' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;RI&#47;RISING&#47;RISING&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1638446491779');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
-    <div style="text-align: center;">
-       
-       
-    <br><br>
-    <button onclick="window.location.href='analysis2.html'" type="button" class="btn btn-success">
-        Carbon Brief Analysis Report of India</button>
 
-    <br><br>
-    </div>
+
+    <!-- ***** Contact Us Area Starts ***** -->
+    <section class="section" id="contact-us">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-xs-12">
+                    <div class="left-text-content">
+                        <div class="section-heading">
+                            <h6>Contact Us</h6>
+                            <h2>Feel free to keep in touch with us!</h2>
+                        </div>
+                        <ul class="contact-info">
+                            <li><img src="assets/images/contact-info-01.png" alt="">010-020-0860</li>
+                            <li><img src="assets/images/contact-info-02.png" alt="">info@company.com</li>
+                            <li><img src="assets/images/contact-info-03.png" alt="">www.company.com</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-8 col-md-8 col-xs-12">
+                    <div class="contact-form">
+                        <form id="contact" action="" method="get">
+                          <div class="row">
+                            <div class="col-md-6 col-sm-12">
+                              <fieldset>
+                                <input name="name" type="text" id="name" placeholder="Your Name *" required="">
+                              </fieldset>
+                            </div>
+                            <div class="col-md-6 col-sm-12">
+                              <fieldset>
+                                <input name="phone" type="text" id="phone" placeholder="Your Phone" required="">
+                              </fieldset>
+                            </div>
+                            <div class="col-md-6 col-sm-12">
+                              <fieldset>
+                                <input name="email" type="email" id="email" placeholder="Your Email *" required="">
+                              </fieldset>
+                            </div>
+                            <div class="col-md-6 col-sm-12">
+                              <fieldset>
+                                <input name="subject" type="text" id="subject" placeholder="Subject">
+                              </fieldset>
+                            </div>
+                            <div class="col-lg-12">
+                              <fieldset>
+                                <textarea name="message" rows="6" id="message" placeholder="Message" required=""></textarea>
+                              </fieldset>
+                            </div>
+                            <div class="col-lg-12">
+                              <fieldset>
+                                <button type="submit" id="form-submit" class="main-button-icon">Send Message Now <i class="fa fa-arrow-right"></i></button>
+                              </fieldset>
+                            </div>
+                          </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ***** Contact Us Area Ends ***** -->
     
+
+    <!-- ***** Features Big Item Start ***** -->
+    <section class="section" id="subscribe">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 offset-lg-2">
+                    <div class="section-heading">
+                        <h6>Subscribe Newsletters</h6>
+                        <h2>Don’t miss this chance!</h2>
+                    </div>
+                    <div class="subscribe-content">
+                        <div class="subscribe-form">
+                            <form id="subscribe-now" action="" method="get">
+                                <div class="row">
+                                    <div class="col-md-8 col-sm-12">
+                                      <fieldset>
+                                        <input name="email" type="text" id="email" placeholder="Enter your email..." required="">
+                                      </fieldset>
+                                    </div>
+                                    <div class="col-md-4 col-sm-12">
+                                      <fieldset>
+                                        <button type="submit" id="form-submit" class="main-button">Subscribe Now</button>
+                                      </fieldset>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ***** Features Big Item End ***** -->
+
     <!-- ***** Footer Start ***** -->
     <footer>
         <div class="container">

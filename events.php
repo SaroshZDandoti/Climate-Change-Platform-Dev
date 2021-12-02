@@ -8,7 +8,6 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <link href="https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./styles/styles_analysis.css" type="text/css">
 
     <title>Climate Change Platform</title>
 
@@ -23,10 +22,11 @@
     <link rel="stylesheet" href="assets/css/owl-carousel.css">
 
     <link rel="stylesheet" href="assets/css/lightbox.css">
+    <link rel="stylesheet" href="./styles/styles_events.css" type="text/css">
 
-    </head>
+</head>
     
-    <body  style="background-color:black;">
+    <body>
     
     <!-- ***** Preloader Start ***** -->
     <div id="preloader">
@@ -53,19 +53,7 @@
                         <!-- ***** Menu Start ***** -->
                         <ul class="nav">
                             <li class="scroll-to-section"><a href="index.html" class="active">Home</a></li>
-                            <li class="scroll-to-section"><a href="analysis.html">Analysis</a></li>
-                            <li class="scroll-to-section"><a href="register.php">Events</a></li>
-                            <li class="scroll-to-section"><a href="carbon.html">Carbon Calculator</a></li>
-                            <li class="scroll-to-section"><a href="about.html">About</a></li>
-                            <li class="submenu">
-                                <a href="javascript:;">More</a>
-                                <ul>
-                                    <li><a href="about.html">About Us</a></li>
-                                    <li><a href="feedback.html">Feedback</a></li>
-                        
-                                </ul>
-                            </li>
-                            <li class="scroll-to-section"><a href="contact.html">Contact Us</a></li> 
+                            <li class="scroll-to-section"><a href="logout.php">LogOut</a></li> 
                             <div class="search-icon">
                                 <a href="#search"><i class="fa fa-search"></i></a>
                             </div>
@@ -94,18 +82,136 @@
         </form>
     </div>
 
-    <br><br><br>
-    <div class='tableauPlaceholder' id='viz1638446491779' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;RI&#47;RISING&#47;RISING&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='RISING&#47;RISING' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;RI&#47;RISING&#47;RISING&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1638446491779');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
-    <div style="text-align: center;">
-       
-       
-    <br><br>
-    <button onclick="window.location.href='analysis2.html'" type="button" class="btn btn-success">
-        Carbon Brief Analysis Report of India</button>
 
-    <br><br>
+
+    <body>
+    
+    <div class="blog-item">
+        <a href="./events1.html">
+            <div class="icon">
+                <img src="./resources/renewableEnergy.jpeg" alt="">
+            </div>
+            <div class="content">
+                <div class="title">REIMAGINING2021  <span class="blog-date">Sat, 25 Dec </span></div>
+                <div class="rounded"></div>
+    
+                <p>
+                    Conference on Sustainable Energy Technologies and Climate Science.Renewable energy provides an effective means of decarbonization of the global energy mix
+                </p>
+            </div>
+    
+            <div class="item-arrow">
+                    <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+            </div>
+        </a>
+    
     </div>
     
+    <div class="blog-item">
+        <a href="./events2.html">
+            <div class="icon">
+                <img src="./resources/forest.jpeg" alt="">
+            </div>
+            <div class="content">
+                <div class="title">Forest and Environment Department  <span class="blog-date">Mon,20 Nov</span></div>
+                <div class="rounded"></div>
+    
+                <p>
+                    State silvicultural garden, Khandagiri, Bhubaneswar, Odisha
+                    Latest Forest Environment And Climate Change Department Rccf Bhubaneswar Dfo Chandaka Wl Tenders Online
+                </p>
+            </div>
+    
+            <div class="item-arrow">
+                <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+            </div>
+        </a>
+    
+    </div>
+    
+    
+    <div class="blog-item">
+        <a href="./events3.html">
+            <div class="icon">
+                <img src="./resources/sustainableEnergy.jpeg" alt="">
+            </div>
+            <div class="content">
+                <div class="title">Conference on Renewable Energy  <span class="blog-date">Thu,17 Feb</span></div>
+                <div class="rounded"></div>
+    
+                <p>
+                    The key intention of GCRECC is to provide opportunity for the global participants to share their ideas and experience in person with their peers expected to join from different parts on the world.
+                </p>
+            </div>
+    
+            <div class="item-arrow">
+                <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+            </div>
+        </a>
+    
+    </div>
+    
+    
+    <div class="blog-item">
+        <a href="./events4.html">
+            <div class="icon">
+                <img src="./resources/climateChange.jpeg" alt="">
+            </div>
+            <div class="content">
+                <div class="title">International Conference on Climate<span class="blog-date">Mon 11 Oct</span></div>
+                <div class="rounded"></div>
+    
+                <p>
+                    To encourage collaboration and exchange of information, ideas among environmentalists and professionals in related disciplines with a particular interest in global climate change issues and solutions.
+                </p>
+            </div>
+    
+            <div class="item-arrow">
+                <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+            </div>
+        </a>
+    
+    </div>
+    
+    <a href="./events1.html">Event1</a>
+    <a href="./events2.html">Event2</a>
+    <a href="./events3.html">Event3</a>
+    <a href="./events4.html">Event4</a>
+    
+        
+    <!-- ***** Features Big Item Start ***** -->
+    <section class="section" id="subscribe">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 offset-lg-2">
+                    <div class="section-heading">
+                        <h6>Subscribe Newsletters</h6>
+                        <h2>Don’t miss this chance!</h2>
+                    </div>
+                    <div class="subscribe-content">
+                        <div class="subscribe-form">
+                            <form id="subscribe-now" action="" method="get">
+                                <div class="row">
+                                    <div class="col-md-8 col-sm-12">
+                                      <fieldset>
+                                        <input name="email" type="text" id="email" placeholder="Enter your email..." required="">
+                                      </fieldset>
+                                    </div>
+                                    <div class="col-md-4 col-sm-12">
+                                      <fieldset>
+                                        <button type="submit" id="form-submit" class="main-button">Subscribe Now</button>
+                                      </fieldset>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ***** Features Big Item End ***** -->
+
     <!-- ***** Footer Start ***** -->
     <footer>
         <div class="container">
